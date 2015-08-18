@@ -1,0 +1,5 @@
+#!/bin/sh
+
+reload-chrome &
+reload-firefox &
+reload-safari &

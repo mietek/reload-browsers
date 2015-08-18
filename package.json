@@ -1,0 +1,21 @@
+{
+  "name": "reload-browsers",
+  "version": "1.0.0",
+  "description": "TODO",
+  "author": "Miëtek Bak <hello@mietek.io>",
+  "homepage": "https://github.com/mietek/reload-browsers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mietek/reload-browsers"
+  },
+  "license": "MIT",
+  "bin": {
+    "reload-chrome": "bin/reload-chrome",
+    "reload-firefox": "node_modules/reload-firefox/bin/reload-firefox",
+    "reload-safari": "bin/reload-safari",
+    "reload-browsers": "bin/reload-browsers"
+  },
+  "dependencies": {
+    "reload-firefox": "^1.0.0"
+  }
+}
