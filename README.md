@@ -13,4 +13,4 @@ See [_reload-firefox_](https://github.com/mietek/reload-firefox) for Firefox-spe
 About
 -----
 
-Made by [Miëtek Bak](https://mietek.io).  Published under the [MIT X11 license](LICENSE.md).
+Made by [Miëtek Bak](https://mietek.io/).  Published under the [MIT X11 license](LICENSE.md).
