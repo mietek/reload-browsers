@@ -1,21 +1,23 @@
 #!/usr/bin/osascript
 
 if application "Safari" is running then
-  tell application "Safari"
-    repeat with theWindow in windows
-      repeat 1 times
-        try
-          set windowTabs to tabs of theWindow
-        on error
-          exit repeat
-        end try
-        repeat with theTab in windowTabs
-          if URL of theTab contains "localhost" then
-            set theURL to URL of theTab
-            set URL of theTab to theURL
-          end if
+  try
+    tell application "Safari"
+      repeat with theWindow in windows
+        repeat 1 times
+          try
+            set windowTabs to tabs of theWindow
+          on error
+            exit repeat
+          end try
+          repeat with theTab in windowTabs
+            if URL of theTab contains "localhost" then
+              set theURL to URL of theTab
+              set URL of theTab to theURL
+            end if
+          end repeat
         end repeat
       end repeat
-    end repeat
-  end tell
+    end tell
+  end try
 end if
