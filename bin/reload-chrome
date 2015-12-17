@@ -6,7 +6,7 @@ if application "Google Chrome" is running then
       repeat with theWindow in windows
         set windowTabs to tabs of theWindow
         repeat with theTab in windowTabs
-          if URL of theTab contains "localhost" then
+          if URL of theTab contains "localhost" or URL of theTab begins with "file:///" then
             tell theTab to reload
           end if
         end repeat

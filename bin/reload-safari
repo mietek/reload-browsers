@@ -11,7 +11,7 @@ if application "Safari" is running then
             exit repeat
           end try
           repeat with theTab in windowTabs
-            if URL of theTab contains "localhost" then
+            if URL of theTab contains "localhost" or URL of theTab begins with "file:///" then
               set theURL to URL of theTab
               set URL of theTab to theURL
             end if
